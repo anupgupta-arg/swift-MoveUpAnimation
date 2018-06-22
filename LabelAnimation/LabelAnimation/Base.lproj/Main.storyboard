@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LabelAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anup Gupta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEF-b3-VoF">
+                                <rect key="frame" x="20" y="220" width="335" height="29.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Developer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H7y-zF-qpA">
+                                <rect key="frame" x="20" y="289.5" width="335" height="29.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Geek Guns" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlK-uq-1De">
+                                <rect key="frame" x="20" y="359" width="335" height="29.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bangalore" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XvG-ka-T5f">
+                                <rect key="frame" x="20" y="428.5" width="335" height="29.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNB-SU-7ce">
+                                <rect key="frame" x="142" y="617" width="91" height="30"/>
+                                <state key="normal" title="Re Animation"/>
+                                <connections>
+                                    <action selector="animationButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XOb-fb-I9w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnk-2s-V6s">
+                                <rect key="frame" x="166" y="567" width="43" height="30"/>
+                                <state key="normal" title="Re set"/>
+                                <connections>
+                                    <action selector="reSetButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jhJ-aU-bIc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="H7y-zF-qpA" firstAttribute="width" secondItem="zEF-b3-VoF" secondAttribute="width" id="1AH-Gu-2v4"/>
+                            <constraint firstItem="H7y-zF-qpA" firstAttribute="top" secondItem="zEF-b3-VoF" secondAttribute="bottom" constant="40" id="2c2-M5-kUW"/>
+                            <constraint firstItem="H7y-zF-qpA" firstAttribute="centerX" secondItem="zEF-b3-VoF" secondAttribute="centerX" id="3Sn-ic-ise"/>
+                            <constraint firstItem="zEF-b3-VoF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="3Xk-kQ-xa3"/>
+                            <constraint firstItem="XvG-ka-T5f" firstAttribute="centerX" secondItem="xlK-uq-1De" secondAttribute="centerX" id="A5v-HE-THP"/>
+                            <constraint firstItem="cNB-SU-7ce" firstAttribute="top" secondItem="bnk-2s-V6s" secondAttribute="bottom" constant="20" id="L11-lf-zND"/>
+                            <constraint firstItem="xlK-uq-1De" firstAttribute="top" secondItem="H7y-zF-qpA" secondAttribute="bottom" constant="40" id="QNh-zE-3fy"/>
+                            <constraint firstItem="XvG-ka-T5f" firstAttribute="top" secondItem="xlK-uq-1De" secondAttribute="bottom" constant="40" id="Ql7-Oe-peF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cNB-SU-7ce" secondAttribute="bottom" constant="20" id="RIe-p7-IE1"/>
+                            <constraint firstItem="bnk-2s-V6s" firstAttribute="centerX" secondItem="cNB-SU-7ce" secondAttribute="centerX" id="SQa-FQ-eBv"/>
+                            <constraint firstItem="xlK-uq-1De" firstAttribute="centerX" secondItem="H7y-zF-qpA" secondAttribute="centerX" id="SjM-M4-bIW"/>
+                            <constraint firstItem="zEF-b3-VoF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Yb3-dB-OJg"/>
+                            <constraint firstItem="xlK-uq-1De" firstAttribute="width" secondItem="H7y-zF-qpA" secondAttribute="width" id="Zzs-MO-GPw"/>
+                            <constraint firstItem="cNB-SU-7ce" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cLU-lM-CWJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zEF-b3-VoF" secondAttribute="trailing" constant="20" id="cmd-ZE-DoZ"/>
+                            <constraint firstItem="XvG-ka-T5f" firstAttribute="width" secondItem="xlK-uq-1De" secondAttribute="width" id="ifw-GN-mje"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="zEF-b3-VoF" id="mzp-9z-kFK"/>
+                        <outlet property="label2" destination="H7y-zF-qpA" id="ok3-Vv-7oU"/>
+                        <outlet property="label3" destination="xlK-uq-1De" id="dsq-lx-Aqh"/>
+                        <outlet property="label4" destination="XvG-ka-T5f" id="WbE-6r-xJN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
